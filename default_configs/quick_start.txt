@@ -1,0 +1,8 @@
+true
+user://audio/music/Phylax/Default_Aquarium Remix.mp3
+25.4833969999872
+25.358
+25.358
+100.0
+1.0
+100.0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bq53wdkmbykww"
+path="res://.godot/imported/Toyota Radio Ad [npNBBrgYcRA].mp3-e6cc588342d0b796a90488562fbfe293.mp3str"
+
+[deps]
+
+source_file="res://ads/Toyota Radio Ad [npNBBrgYcRA].mp3"
+dest_files=["res://.godot/imported/Toyota Radio Ad [npNBBrgYcRA].mp3-e6cc588342d0b796a90488562fbfe293.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

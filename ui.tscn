@@ -1,0 +1,1271 @@
+[gd_scene format=3 uid="uid://w605rvdfddbw"]
+
+[ext_resource type="Script" uid="uid://c08jkqwukeunr" path="res://ui.gd" id="1_27fn8"]
+[ext_resource type="Script" uid="uid://ccvee51m7ucw7" path="res://SimpleColour.gd" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://iemnm1l2fyj6" path="res://TextSizer.gd" id="2_m6e0p"]
+[ext_resource type="Script" uid="uid://dr5k15yf03k0o" path="res://simplecopy.gd" id="4_cka8k"]
+[ext_resource type="Texture2D" uid="uid://bnyjavdla1vml" path="res://Vinyl.svg" id="4_nltto"]
+[ext_resource type="Texture2D" uid="uid://cmsc4dnlohpcp" path="res://buttons/Open1.svg" id="4_y4yjw"]
+[ext_resource type="Texture2D" uid="uid://cdo2vo0vet1k0" path="res://buttons/Open3.svg" id="5_waa4j"]
+[ext_resource type="Texture2D" uid="uid://cl2c6g2by6u1i" path="res://buttons/Open2.svg" id="6_ok7cu"]
+[ext_resource type="Script" uid="uid://iqs7ahf6cc44" path="res://play_button.gd" id="7_b2p7n"]
+[ext_resource type="Texture2D" uid="uid://cmmvqt2pg31ok" path="res://buttons/Play1.svg" id="7_irxef"]
+[ext_resource type="Script" uid="uid://boqvol8f4v78q" path="res://RandomAudioPlayer.gd" id="7_os5c7"]
+[ext_resource type="Texture2D" uid="uid://dpnt88feqk2c1" path="res://buttons/Play3.svg" id="8_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://bu5kdkrtsxfc1" path="res://buttons/Play2.svg" id="9_n5rqp"]
+[ext_resource type="AudioStream" uid="uid://btr32ier1g5ig" path="res://soundbanks/mechanical/mechanical_1.mp3" id="10_4n3bm"]
+[ext_resource type="Script" uid="uid://dc36lxvp012hs" path="res://open_button.gd" id="10_e2l4f"]
+[ext_resource type="AudioStream" uid="uid://bowioy4psbq3j" path="res://soundbanks/mechanical/mechanical_2.mp3" id="11_nph28"]
+[ext_resource type="AudioStream" uid="uid://bl5so7k456o78" path="res://soundbanks/mechanical/mechanical_3.mp3" id="12_jgnrw"]
+[ext_resource type="AudioStream" uid="uid://bv2ae0uwh3s83" path="res://soundbanks/mechanical/mechanical_4.mp3" id="13_vgsgi"]
+[ext_resource type="AudioStream" uid="uid://b70qjwfaj5ise" path="res://soundbanks/mechanical/mechanical_5.mp3" id="14_hqsqr"]
+[ext_resource type="AudioStream" uid="uid://b2yk7a5nhx74k" path="res://soundbanks/blaster/blaster_1.mp3" id="19_5w1ih"]
+[ext_resource type="Script" uid="uid://txke845w4xw3" path="res://slider_area.gd" id="20_sosvr"]
+[ext_resource type="Script" uid="uid://be6y65l8xvjco" path="res://time_enter.gd" id="20_v8jk5"]
+[ext_resource type="Script" uid="uid://d1ia3bn7lr72a" path="res://sounds_slider.gd" id="20_vkygq"]
+[ext_resource type="AudioStream" uid="uid://bpyvwclv2lvq3" path="res://soundbanks/blaster/blaster_2.mp3" id="20_wdxvd"]
+[ext_resource type="AudioStream" uid="uid://b6kr3fxia0iu0" path="res://soundbanks/blaster/blaster_3.mp3" id="21_n767x"]
+[ext_resource type="PackedScene" uid="uid://duk35nx4es2fr" path="res://root.tscn" id="22_ndy3v"]
+[ext_resource type="AudioStream" uid="uid://cgdk71teiaurh" path="res://soundbanks/blaster/blaster_4.mp3" id="22_ow8r1"]
+[ext_resource type="AudioStream" uid="uid://b1fewdwabl4m7" path="res://soundbanks/rocket/launch_1.mp3" id="23_af57k"]
+[ext_resource type="AudioStream" uid="uid://b1hs78t18gmh5" path="res://inteference/inteference.mp3" id="23_x2s2p"]
+[ext_resource type="Texture2D" uid="uid://cxoeldrhw5qlt" path="res://buttons/Change1.svg" id="24_gxnlh"]
+[ext_resource type="AudioStream" uid="uid://c457y4rjs1401" path="res://soundbanks/rocket/launch_2.mp3" id="24_xlx6d"]
+[ext_resource type="AudioStream" uid="uid://cqi02iabbygj7" path="res://soundbanks/rocket/launch_3.mp3" id="25_11g2u"]
+[ext_resource type="Texture2D" uid="uid://dl7v2y83sdyjy" path="res://buttons/Change3.svg" id="25_w05v2"]
+[ext_resource type="AudioStream" uid="uid://bx6j4w5j05rak" path="res://soundbanks/rocket/launch_4.mp3" id="26_5g28c"]
+[ext_resource type="Texture2D" uid="uid://c3pp1655trf5i" path="res://buttons/Change2.svg" id="26_v463t"]
+[ext_resource type="Texture2D" uid="uid://evrnjvjopabg" path="res://buttons/red1.svg" id="27_2u0ql"]
+[ext_resource type="AudioStream" uid="uid://cqkhxp0osn7l1" path="res://staticMedium/static short.mp3" id="27_7w61g"]
+[ext_resource type="AudioStream" uid="uid://c2hoetgo4lqgh" path="res://soundbanks/explosion/explosion_1.mp3" id="27_75fsn"]
+[ext_resource type="Texture2D" uid="uid://bsntklg2hqx3m" path="res://buttons/green1.svg" id="27_u1fh6"]
+[ext_resource type="Texture2D" uid="uid://bjyppkq4kbbq5" path="res://buttons/green3.svg" id="28_0c0hj"]
+[ext_resource type="AudioStream" uid="uid://dy65iu0qgshqo" path="res://soundbanks/explosion/explosion_2.mp3" id="28_1xskv"]
+[ext_resource type="Texture2D" uid="uid://088htj0cs5u8" path="res://buttons/red3.svg" id="28_r4oxx"]
+[ext_resource type="Texture2D" uid="uid://c6rof2poxy6ha" path="res://buttons/green2.svg" id="29_4gg1n"]
+[ext_resource type="AudioStream" uid="uid://bgpncy6n8cvxq" path="res://soundbanks/explosion/explosion_3.mp3" id="29_cb22p"]
+[ext_resource type="Texture2D" uid="uid://t688107lljxb" path="res://buttons/red2.svg" id="29_i2v2c"]
+[ext_resource type="Texture2D" uid="uid://lofkxre1qgcv" path="res://buttons/yellow1.svg" id="30_4n3bm"]
+[ext_resource type="Script" uid="uid://b2q3rplbhd1qx" path="res://panel_1.gd" id="30_gxnlh"]
+[ext_resource type="AudioStream" uid="uid://ca6bibbefqk1p" path="res://soundbanks/glitch/glitch_1.mp3" id="30_oqxfb"]
+[ext_resource type="Texture2D" uid="uid://bfx68ku5u7h47" path="res://buttons/yellow3.svg" id="31_nph28"]
+[ext_resource type="AudioStream" uid="uid://cghuhni0lcjri" path="res://soundbanks/glitch/glitch_2.mp3" id="31_yrl65"]
+[ext_resource type="AudioStream" uid="uid://dp7o7rwhq4eja" path="res://soundbanks/glitch/glitch_3.mp3" id="32_8fmno"]
+[ext_resource type="Texture2D" uid="uid://bbv1yr0ps3v11" path="res://buttons/yellow2.svg" id="32_jgnrw"]
+[ext_resource type="AudioStream" uid="uid://bsvmy0wk74ld3" path="res://soundbanks/terrible_clock/terrible_clock_1.mp3" id="33_ctsqr"]
+[ext_resource type="AudioStream" uid="uid://dkont6osa3g6g" path="res://soundbanks/terrible_clock/terrible_clock_2.mp3" id="34_2m7jo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xb563"]
+bg_color = Color(0.37254903, 0.4117647, 0.48235294, 1)
+border_width_right = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n5ude"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyqef"]
+bg_color = Color(0.12156863, 0.12941177, 0.1254902, 1)
+expand_margin_left = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xb563"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nltto"]
+bg_color = Color(0.37254903, 0.4117647, 0.48235294, 1)
+border_width_top = 5
+border_width_right = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+expand_margin_left = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6e0p"]
+bg_color = Color(0.12156863, 0.12941177, 0.1254902, 1)
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27fn8"]
+bg_color = Color(0.37254903, 0.4117647, 0.48235294, 1)
+border_width_left = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibotj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nltto"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxnlh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4yjw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7w61g"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w05v2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.13725491, 0, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1fh6"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_detail = 1
+
+[node name="UI" type="Control" unique_id=1896461844]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27fn8")
+spin_period = 3.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1379204755]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sounds Pannel" type="PanelContainer" parent="HBoxContainer" unique_id=70321069]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_xb563")
+script = ExtResource("1_fyqef")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Sounds Pannel" unique_id=1755018871]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer" unique_id=644904649]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer" unique_id=518453164]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_override_styles/panel = SubResource("StyleBoxFlat_n5ude")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/PanelContainer" unique_id=677698860]
+layout_mode = 2
+text = "Sound banks"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer" unique_id=484157996]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SoundbankTitle" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=890281752 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "A"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=2145310679]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons" unique_id=1770779221]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankA" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons/Play Button" unique_id=1173993426]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/A"
+default_sounds = Array[AudioStreamMP3]([ExtResource("10_4n3bm"), ExtResource("11_nph28"), ExtResource("12_jgnrw"), ExtResource("13_vgsgi"), ExtResource("14_hqsqr")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons" unique_id=2057424554]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/A"
+
+[node name="SoundbankTitle2" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1610572525 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "B"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons2" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1250232927]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons2" unique_id=716176775]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankB" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons2/Play Button" unique_id=1943450913]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/B"
+default_sounds = Array[AudioStreamMP3]([ExtResource("19_5w1ih"), ExtResource("20_wdxvd"), ExtResource("21_n767x"), ExtResource("22_ow8r1")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons2" unique_id=1793521365]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/B"
+
+[node name="SoundbankTitle3" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=982549354 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "C"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons3" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1267451721]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons3" unique_id=2020289495]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankC" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons3/Play Button" unique_id=617831129]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/C"
+default_sounds = Array[AudioStreamMP3]([ExtResource("23_af57k"), ExtResource("24_xlx6d"), ExtResource("25_11g2u"), ExtResource("26_5g28c")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons3" unique_id=782346440]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/C"
+
+[node name="SoundbankTitle4" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=608324391 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "D"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons4" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=173924634]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons4" unique_id=1744906253]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankD" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons4/Play Button" unique_id=1565305681]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/D"
+default_sounds = Array[AudioStreamMP3]([ExtResource("27_75fsn"), ExtResource("28_1xskv"), ExtResource("29_cb22p")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons4" unique_id=929045888]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/D"
+
+[node name="SoundbankTitle5" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1096057435 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "E"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons5" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1638379297]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons5" unique_id=909353183]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankE" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons5/Play Button" unique_id=1655643027]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/E"
+default_sounds = Array[AudioStreamMP3]([ExtResource("30_oqxfb"), ExtResource("31_yrl65"), ExtResource("32_8fmno")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons5" unique_id=712645932]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/E"
+
+[node name="SoundbankTitle6" type="LineEdit" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=676724823 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_vertical = 3
+text = "F"
+alignment = 1
+max_length = 10
+flat = true
+select_all_on_focus = true
+script = ExtResource("4_cka8k")
+copyNode = NodePath("../../PanelContainer/RichTextLabel")
+
+[node name="SoundbankButtons6" type="HBoxContainer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1332958418]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Play Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons6" unique_id=1345634126]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_b2p7n")
+
+[node name="SoundbankE" type="AudioStreamPlayer" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons6/Play Button" unique_id=1447177647]
+bus = &"Sounds"
+script = ExtResource("7_os5c7")
+folder_name = "audio/sounds/F"
+default_sounds = Array[AudioStreamMP3]([ExtResource("33_ctsqr"), ExtResource("34_2m7jo")])
+
+[node name="Open Button" type="TextureButton" parent="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankButtons6" unique_id=987314843]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/sounds/E"
+
+[node name="Info Pannel" type="PanelContainer" parent="HBoxContainer" unique_id=1533095044]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fyqef")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Info Pannel" unique_id=1639951446]
+layout_mode = 2
+
+[node name="Decoration Pannel" type="PanelContainer" parent="HBoxContainer/Info Pannel/VBoxContainer" unique_id=725158128]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xb563")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel" unique_id=294175885]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel/MarginContainer" unique_id=1358636006]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+
+[node name="Time" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel/MarginContainer/VBoxContainer" unique_id=2051642660]
+layout_mode = 2
+size_flags_vertical = 3
+text = "8:40 PM"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 3
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+auto_fit_on_text_change = false
+
+[node name="Title" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel/MarginContainer/VBoxContainer" unique_id=148525161]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+text = "Galactic Broadcasting Centre"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="Vinyl Wrapper" type="Control" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel/MarginContainer/VBoxContainer" unique_id=1402736904]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Vinyl" type="TextureRect" parent="HBoxContainer/Info Pannel/VBoxContainer/Decoration Pannel/MarginContainer/VBoxContainer/Vinyl Wrapper" unique_id=492000076]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+focus_mode = 1
+texture = ExtResource("4_nltto")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer/Info Pannel/VBoxContainer" unique_id=296289139]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_behavior_recursive = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_nltto")
+script = ExtResource("1_fyqef")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2" unique_id=568235514]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer" unique_id=1442147854]
+layout_mode = 2
+
+[node name="TimeSince1" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer" unique_id=413080473]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Time since last radio segment:"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="hbox1" type="HBoxContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer" unique_id=274328147]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="left" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox1" unique_id=74772577]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "12:01 /"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="timeEnter1" type="LineEdit" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox1" unique_id=384216475 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_behavior_recursive = 2
+text = "07:10"
+max_length = 5
+flat = true
+script = ExtResource("20_v8jk5")
+copyNode = NodePath("../../../../../../../Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer/ThemeT")
+
+[node name="TimeSince2" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer" unique_id=891369905]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Time since last advertisement:"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="hbox2" type="HBoxContainer" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer" unique_id=1474535767]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="left" type="RichTextLabel" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox2" unique_id=500939619]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "12:01 /"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="timeEnter2" type="LineEdit" parent="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox2" unique_id=1100556893 node_paths=PackedStringArray("copyNode")]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_behavior_recursive = 2
+text = "06:00"
+max_length = 5
+flat = true
+script = ExtResource("20_v8jk5")
+copyNode = NodePath("../../../../../../../Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer/ThemeT")
+
+[node name="Themes Pannel" type="PanelContainer" parent="HBoxContainer" unique_id=1533783669]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+theme_override_styles/panel = SubResource("StyleBoxFlat_m6e0p")
+
+[node name="Controlls Pannel" type="PanelContainer" parent="HBoxContainer" unique_id=981612422]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_27fn8")
+script = ExtResource("1_fyqef")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel" unique_id=399742180]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer" unique_id=1425829534]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer" unique_id=216251296]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer" unique_id=1318355170]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="musicLable" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer/Panel" unique_id=51621492]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Music"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SkiptoMusic" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer/Panel" unique_id=1074394823]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="OpenMusic" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer/Panel" unique_id=1036590897]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/music"
+
+[node name="MusicRemaining" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer/Panel" unique_id=2121670529]
+layout_mode = 2
+size_flags_vertical = 3
+text = "00:00"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+auto_fit_on_text_change = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer" unique_id=247907079]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel2" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2" unique_id=1453044002]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AdLable" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2/Panel2" unique_id=401119597]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Advert"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SkiptoAd" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2/Panel2" unique_id=302998875]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="OpenAd" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2/Panel2" unique_id=366842002]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/ads"
+
+[node name="AdRemaining" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2/Panel2" unique_id=496951100]
+layout_mode = 2
+size_flags_vertical = 3
+text = "00:00"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+auto_fit_on_text_change = false
+
+[node name="MarginContainer3" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer" unique_id=2033983324]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel3" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3" unique_id=1232717048]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ShowLable" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3" unique_id=548345678]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Radio"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SkiptoShow" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3" unique_id=294680496]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="OpenShow" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3" unique_id=1214186572]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/segment"
+
+[node name="ShowRemaining" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3" unique_id=90369466]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "00:00"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+auto_fit_on_text_change = false
+
+[node name="sneekyButton" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3/ShowRemaining" unique_id=1783863316]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.2
+anchor_right = 1.0
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "radio"
+
+[node name="MarginContainer4" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer" unique_id=254284480]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel4" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4" unique_id=1537773506]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="eventLable" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4/Panel4" unique_id=306356477]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Special"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SkiptoEvent" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4/Panel4" unique_id=585201080]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("7_irxef")
+texture_pressed = ExtResource("8_e2l4f")
+texture_hover = ExtResource("9_n5rqp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="OpenEvent" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4/Panel4" unique_id=2038830415]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "audio/broadcast"
+
+[node name="EventRemaining" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4/Panel4" unique_id=829223067]
+layout_mode = 2
+size_flags_vertical = 3
+text = "00:00"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.8
+auto_fit_on_text_change = false
+
+[node name="SliderBox" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer" unique_id=1602525088]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ibotj")
+
+[node name="Sliders" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox" unique_id=2056251838]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="sliderArea" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders" unique_id=1431281349]
+layout_mode = 2
+script = ExtResource("20_sosvr")
+
+[node name="RadioVolText" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=973043800]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Radio Volume"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SliderStack1" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=1642560807]
+layout_mode = 2
+
+[node name="RadSlide" type="HSlider" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack1" unique_id=1824095579]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+value = 100.0
+
+[node name="RadText" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack1" unique_id=381975226]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100%"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="InteferenceText2" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=560977673]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Signal inteference"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SliderStack2" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=180470421]
+layout_mode = 2
+
+[node name="IntefSlider" type="HSlider" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack2" unique_id=2130394719]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+
+[node name="IntefText" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack2" unique_id=2054622214]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0%"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SoundbankVolText3" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=1864612999]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Sounds Volume"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="SliderStack3" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" unique_id=1701634231]
+layout_mode = 2
+
+[node name="SoundsSlider" type="HSlider" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack3" unique_id=1845625011]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.0
+value = 100.0
+script = ExtResource("20_vkygq")
+
+[node name="soundsTextPer" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack3" unique_id=95949935]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100%"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="Themer" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer" unique_id=1818028170]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer" unique_id=412515211]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer" unique_id=1536447981]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_nltto")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer" unique_id=806661210]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer" unique_id=1360177074]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=307029555]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_gxnlh")
+
+[node name="ThemeT" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer" unique_id=1557660688]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Theme"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 2
+script = ExtResource("2_m6e0p")
+
+[node name="theme name" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=546165655]
+layout_mode = 2
+size_flags_vertical = 3
+text = "NameName"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+safety_margin = 0.7
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=2063714208]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1671957558]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("24_gxnlh")
+texture_pressed = ExtResource("25_w05v2")
+texture_hover = ExtResource("26_v463t")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=485690345]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_y4yjw")
+texture_pressed = ExtResource("5_waa4j")
+texture_hover = ExtResource("6_ok7cu")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("10_e2l4f")
+destination = "configs/themes.txt"
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=689818003]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("24_gxnlh")
+texture_pressed = ExtResource("25_w05v2")
+texture_hover = ExtResource("26_v463t")
+ignore_texture_size = true
+stretch_mode = 0
+flip_v = true
+
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer" unique_id=276982866]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y4yjw")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2" unique_id=546115312]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer" unique_id=1938949783]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer" unique_id=1703475760]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7w61g")
+
+[node name="PanelContainer3" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer" unique_id=707384704]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_w05v2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3" unique_id=1399822626]
+layout_mode = 2
+
+[node name="TextureButton3" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer" unique_id=1689553206]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("27_u1fh6")
+texture_pressed = ExtResource("28_0c0hj")
+texture_hover = ExtResource("29_4gg1n")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Panel" type="Panel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton3" unique_id=1498564286]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.3
+anchor_right = 0.7
+anchor_bottom = 0.7
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u1fh6")
+
+[node name="TextureButton2" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer" unique_id=479838371]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("30_4n3bm")
+texture_pressed = ExtResource("31_nph28")
+texture_hover = ExtResource("32_jgnrw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton2" unique_id=1572580777]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+text = "-"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer" unique_id=1554909622]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("27_2u0ql")
+texture_pressed = ExtResource("28_r4oxx")
+texture_hover = ExtResource("29_i2v2c")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton" unique_id=303646210]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+text = "X"
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_m6e0p")
+
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer" unique_id=18959325]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7w61g")
+
+[node name="root" parent="." unique_id=1649146273 instance=ExtResource("22_ndy3v")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=190454094]
+stream = ExtResource("23_x2s2p")
+autoplay = true
+bus = &"Inteference"
+parameters/looping = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=520237292]
+stream = ExtResource("27_7w61g")
+bus = &"Radio"
+
+[node name="Panel1" type="Panel" parent="." unique_id=1130795439]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.025
+anchor_bottom = 0.025
+script = ExtResource("30_gxnlh")
+edge = 4
+
+[node name="Panel9" type="Panel" parent="." unique_id=729566164]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.175
+anchor_right = 0.65
+anchor_bottom = 0.675
+script = ExtResource("30_gxnlh")
+edge = 8
+
+[node name="SecretButon" type="TextureButton" parent="Panel9" unique_id=653199557]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29
+anchor_top = 0.53
+anchor_right = 0.47
+anchor_bottom = 0.75
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Panel5" type="Panel" parent="." unique_id=1283581947]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_right = 0.975
+anchor_bottom = 0.025
+script = ExtResource("30_gxnlh")
+edge = 0
+
+[node name="Panel6" type="Panel" parent="." unique_id=1406416776]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.975
+anchor_right = 0.975
+anchor_bottom = 1.0
+script = ExtResource("30_gxnlh")
+edge = 1
+
+[node name="Panel7" type="Panel" parent="." unique_id=1425534619]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.025
+anchor_right = 0.025
+anchor_bottom = 0.975
+script = ExtResource("30_gxnlh")
+edge = 2
+
+[node name="Panel8" type="Panel" parent="." unique_id=1419199718]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.975
+anchor_top = 0.025
+anchor_right = 1.0
+anchor_bottom = 0.975
+script = ExtResource("30_gxnlh")
+edge = 3
+
+[node name="Panel2" type="Panel" parent="." unique_id=808161326]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.975
+anchor_right = 1.0
+anchor_bottom = 0.025
+script = ExtResource("30_gxnlh")
+edge = 5
+
+[node name="Panel3" type="Panel" parent="." unique_id=132918252]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.975
+anchor_right = 0.025
+anchor_bottom = 1.0
+script = ExtResource("30_gxnlh")
+edge = 6
+
+[node name="Panel4" type="Panel" parent="." unique_id=776300061]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.975
+anchor_top = 0.975
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("30_gxnlh")
+
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle" to="." method="_on_text_update" binds= [2]]
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle2" to="." method="_on_text_update" binds= [3]]
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle3" to="." method="_on_text_update" binds= [4]]
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle4" to="." method="_on_text_update" binds= [5]]
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle5" to="." method="_on_text_update" binds= [6]]
+[connection signal="text_submitted" from="HBoxContainer/Sounds Pannel/MarginContainer/VBoxContainer/VBoxContainer/SoundbankTitle6" to="." method="_on_text_update" binds= [7]]
+[connection signal="new_time" from="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox1/timeEnter1" to="." method="_on_time_enter_1_new_time"]
+[connection signal="texty" from="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox1/timeEnter1" to="." method="_on_text_update" binds= [0]]
+[connection signal="new_time" from="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox2/timeEnter2" to="." method="_on_time_enter_2_new_time"]
+[connection signal="texty" from="HBoxContainer/Info Pannel/VBoxContainer/PanelContainer2/MarginContainer/VBoxContainer/hbox2/timeEnter2" to="." method="_on_text_update" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer/Panel/SkiptoMusic" to="." method="_on_skipto_music_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer2/Panel2/SkiptoAd" to="." method="_on_skipto_ad_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer3/Panel3/SkiptoShow" to="." method="_on_skipto_show_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/HBoxContainer/MarginContainer4/Panel4/SkiptoEvent" to="." method="_on_skipto_event_pressed"]
+[connection signal="value_changed" from="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack1/RadSlide" to="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" method="_on_rad_slide_value_changed"]
+[connection signal="value_changed" from="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea/SliderStack2/IntefSlider" to="HBoxContainer/Controlls Pannel/VBoxContainer/SliderBox/Sliders/sliderArea" method="_on_intef_slider_value_changed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton3" to="." method="_on_fullscr_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton2" to="." method="_on_minimise_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlls Pannel/VBoxContainer/Themer/HBoxContainer/PanelContainer2/MarginContainer/HBoxContainer/PanelContainer3/VBoxContainer/TextureButton" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Panel9/SecretButon" to="." method="_on_secret_buton_pressed"]

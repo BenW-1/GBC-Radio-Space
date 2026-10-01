@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oo2pbe48hjio"
+path="res://.godot/imported/SaikiCard2 - Copy.mp3-6c6b4b2ee0f76a58257e14f4e6e0b654.mp3str"
+
+[deps]
+
+source_file="res://intros/SaikiCard2 - Copy.mp3"
+dest_files=["res://.godot/imported/SaikiCard2 - Copy.mp3-6c6b4b2ee0f76a58257e14f4e6e0b654.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

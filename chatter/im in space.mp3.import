@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://40r8qcbqgkay"
+path="res://.godot/imported/im in space.mp3-29000bd2a61d5f1497116d1d750d6268.mp3str"
+
+[deps]
+
+source_file="res://chatter/im in space.mp3"
+dest_files=["res://.godot/imported/im in space.mp3-29000bd2a61d5f1497116d1d750d6268.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

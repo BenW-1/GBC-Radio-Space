@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djc86pyr7iknc"
+path="res://.godot/imported/TV Commercial for Town Fair Tire [9Urykfwd3Qg].mp3-221dd0e109177eecfffa01403f93f0cf.mp3str"
+
+[deps]
+
+source_file="res://ads/TV Commercial for Town Fair Tire [9Urykfwd3Qg].mp3"
+dest_files=["res://.godot/imported/TV Commercial for Town Fair Tire [9Urykfwd3Qg].mp3-221dd0e109177eecfffa01403f93f0cf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

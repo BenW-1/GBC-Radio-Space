@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://duk35nx4es2fr"]
+
+[ext_resource type="Script" uid="uid://c0tg4n40u048i" path="res://root.gd" id="1_pyidc"]
+[ext_resource type="AudioStream" uid="uid://dt032try0xppp" path="res://idents/GBC_1.mp3" id="3_f6va0"]
+[ext_resource type="Script" uid="uid://boqvol8f4v78q" path="res://RandomAudioPlayer.gd" id="4_28aoi"]
+[ext_resource type="AudioStream" uid="uid://bkj1vfunpiqjf" path="res://idents/GBC_2.mp3" id="5_0aysq"]
+[ext_resource type="AudioStream" uid="uid://du3tirjbs4c64" path="res://chatter/best at space.mp3" id="5_qt76e"]
+[ext_resource type="AudioStream" uid="uid://dp1cyfwiida4a" path="res://idents/GBC_3.mp3" id="5_uk3k5"]
+[ext_resource type="AudioStream" uid="uid://crqicx3buwp0t" path="res://chatter/I love.mp3" id="8_blcw0"]
+[ext_resource type="AudioStream" uid="uid://40r8qcbqgkay" path="res://chatter/im in space.mp3" id="9_50g4q"]
+[ext_resource type="AudioStream" uid="uid://bri304c1m5sr" path="res://backing/recovered_audio.mp3" id="9_ans7r"]
+[ext_resource type="AudioStream" uid="uid://cjgqrevyai4e8" path="res://backing/Saiki.mp3" id="10_7qgyb"]
+[ext_resource type="AudioStream" uid="uid://cijcni66o05kq" path="res://chatter/space pace.mp3" id="12_po8fv"]
+[ext_resource type="AudioStream" uid="uid://cmgndceauht3w" path="res://chatter/spell it.mp3" id="13_ub8w1"]
+[ext_resource type="AudioStream" uid="uid://ilpec3dbwtlm" path="res://radio segments/Default_lemons.mp3" id="14_xu2l0"]
+[ext_resource type="AudioStream" uid="uid://1o3xv0ndky8k" path="res://chatter/we are.mp3" id="14_ynlg5"]
+[ext_resource type="AudioStream" uid="uid://b3hd14sh5ossw" path="res://radio segments/Default_ASMR.mp3" id="15_lci31"]
+[ext_resource type="AudioStream" uid="uid://d35qd5kq5ea4" path="res://music/Default_Aquarium Remix.mp3" id="16_udg8a"]
+[ext_resource type="AudioStream" uid="uid://dpdkeevnvdk8w" path="res://music/Default_PHM_1.mp3" id="17_cr30j"]
+[ext_resource type="AudioStream" uid="uid://doevecg8jabv0" path="res://music/Default_PHM_2.mp3" id="18_xu2l0"]
+[ext_resource type="AudioStream" uid="uid://bdyle3iias5p2" path="res://music/Default_Wisp Remix.mp3" id="19_lci31"]
+[ext_resource type="AudioStream" uid="uid://nxsa52n4l7hx" path="res://intros/final_frontier.mp3" id="29_f6va0"]
+[ext_resource type="AudioStream" uid="uid://bcp68jdqww5jw" path="res://intros/from your house.mp3" id="30_uk3k5"]
+[ext_resource type="AudioStream" uid="uid://rloxqlyalusg" path="res://intros/hue hue.mp3" id="31_0aysq"]
+[ext_resource type="AudioStream" uid="uid://b3q8eiix6oilo" path="res://intros/NUDES.mp3" id="33_obcww"]
+[ext_resource type="AudioStream" uid="uid://cc730pj65sdus" path="res://intros/SaikiCard1 - Copy.mp3" id="34_ans7r"]
+[ext_resource type="AudioStream" uid="uid://d3puwq40vsawe" path="res://intros/pissing on the moon.mp3" id="34_mh7w8"]
+[ext_resource type="AudioStream" uid="uid://b7wjjj7jc6uxo" path="res://intros/SaikiCard1.mp3" id="35_623xu"]
+[ext_resource type="AudioStream" uid="uid://oo2pbe48hjio" path="res://intros/SaikiCard2 - Copy.mp3" id="36_7qgyb"]
+[ext_resource type="AudioStream" uid="uid://c5pc66dk1qt2" path="res://intros/SaikiCard2.mp3" id="36_sbofu"]
+[ext_resource type="AudioStream" uid="uid://fegw8to6rmfm" path="res://intros/That's no moon.mp3" id="37_ans7r"]
+[ext_resource type="AudioStream" uid="uid://bwxd2carmg3b4" path="res://intros/turn it up.mp3" id="38_7qgyb"]
+[ext_resource type="AudioStream" uid="uid://xxl6jv2g80lh" path="res://ads/Default_steal_a_car.mp3" id="38_f6va0"]
+[ext_resource type="Script" uid="uid://b03ycq0nc1s5j" path="res://ConfigSeeder.gd" id="39_sc48t"]
+[ext_resource type="AudioStream" uid="uid://wyh08tc8uvxv" path="res://staticMedium/static medium.mp3" id="40_3bwdn"]
+[ext_resource type="AudioStream" uid="uid://crxxoh3d1tci0" path="res://broadcasts/pissing on the moon.mp3" id="47_sbofu"]
+[ext_resource type="AudioStream" uid="uid://cqkhxp0osn7l1" path="res://staticMedium/static short.mp3" id="48_ans7r"]
+
+[node name="root" type="Node2D" unique_id=1649146273]
+script = ExtResource("1_pyidc")
+main_backing_vol_linear = 0.5
+
+[node name="Ident" type="AudioStreamPlayer" parent="." unique_id=146120073]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "radio/idents"
+default_sounds = Array[AudioStreamMP3]([ExtResource("3_f6va0"), ExtResource("5_0aysq"), ExtResource("5_uk3k5")])
+
+[node name="Ident timer" type="Timer" parent="." unique_id=1132742218]
+one_shot = true
+
+[node name="Backing" type="AudioStreamPlayer" parent="." unique_id=404182242]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "radio/backing"
+repeat = true
+default_sounds = Array[AudioStreamMP3]([ExtResource("9_ans7r"), ExtResource("10_7qgyb")])
+
+[node name="Ident transition timer" type="Timer" parent="." unique_id=793647788]
+one_shot = true
+
+[node name="chatter" type="AudioStreamPlayer" parent="." unique_id=888521497]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "radio/chatter"
+default_sounds = Array[AudioStreamMP3]([ExtResource("8_blcw0"), ExtResource("9_50g4q"), ExtResource("12_po8fv"), ExtResource("13_ub8w1"), ExtResource("14_ynlg5"), ExtResource("5_qt76e")])
+
+[node name="Chatter breath" type="Timer" parent="." unique_id=1596552093]
+one_shot = true
+
+[node name="Segment" type="AudioStreamPlayer" parent="." unique_id=556612424]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "audio/Segment"
+is_theme_specific = true
+default_sounds = Array[AudioStreamMP3]([ExtResource("15_lci31"), ExtResource("14_xu2l0")])
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=932648755]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "audio/music"
+is_theme_specific = true
+default_sounds = Array[AudioStreamMP3]([ExtResource("16_udg8a"), ExtResource("17_cr30j"), ExtResource("18_xu2l0"), ExtResource("19_lci31")])
+
+[node name="Intro" type="AudioStreamPlayer" parent="." unique_id=32428163]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "radio/intros"
+default_sounds = Array[AudioStreamMP3]([ExtResource("29_f6va0"), ExtResource("30_uk3k5"), ExtResource("31_0aysq"), ExtResource("33_obcww"), ExtResource("34_mh7w8"), ExtResource("34_ans7r"), ExtResource("35_623xu"), ExtResource("36_7qgyb"), ExtResource("36_sbofu"), ExtResource("37_ans7r"), ExtResource("38_7qgyb")])
+
+[node name="hiss1" type="AudioStreamPlayer" parent="." unique_id=1784370744]
+stream = ExtResource("40_3bwdn")
+bus = &"Radio"
+
+[node name="hiss2" type="AudioStreamPlayer" parent="." unique_id=1035245232]
+stream = ExtResource("40_3bwdn")
+bus = &"Radio"
+
+[node name="silences" type="Node" parent="." unique_id=932811122]
+script = ExtResource("39_sc48t")
+default_config_path = "res://default_configs/silences.txt"
+local_path = "configs/silences.txt"
+
+[node name="begin silence" type="Timer" parent="." unique_id=702355414]
+one_shot = true
+
+[node name="end silence" type="Timer" parent="." unique_id=1330169064]
+one_shot = true
+
+[node name="Starting hiss" type="AudioStreamPlayer" parent="." unique_id=394832752]
+stream = ExtResource("40_3bwdn")
+bus = &"Radio"
+
+[node name="Ad" type="AudioStreamPlayer" parent="." unique_id=1116534396]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "audio/ads"
+is_theme_specific = true
+default_sounds = Array[AudioStreamMP3]([ExtResource("38_f6va0")])
+
+[node name="Broadcast" type="AudioStreamPlayer" parent="." unique_id=1300621582]
+bus = &"Radio"
+script = ExtResource("4_28aoi")
+folder_name = "audio/broadcast"
+is_theme_specific = true
+default_sounds = Array[AudioStreamMP3]([ExtResource("47_sbofu")])
+
+[node name="embarasmentHiss" type="AudioStreamPlayer" parent="." unique_id=1763745422]
+stream = ExtResource("48_ans7r")
+bus = &"Radio"
+
+[connection signal="timeout" from="Ident timer" to="." method="_on_ident_timer_timeout"]
+[connection signal="timeout" from="Ident transition timer" to="." method="_on_ident_transition_timer_timeout"]
+[connection signal="track_finished" from="chatter" to="." method="_on_chatter_finished"]
+[connection signal="timeout" from="Chatter breath" to="." method="_on_chatter_breath_timeout"]
+[connection signal="track_finished" from="Segment" to="." method="_on_segment_finished"]
+[connection signal="track_finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="track_finished" from="Intro" to="." method="_on_intro_finished"]
+[connection signal="finished" from="hiss1" to="." method="_on_hiss_1_finished"]
+[connection signal="finished" from="hiss2" to="." method="_on_hiss_2_finished"]
+[connection signal="timeout" from="begin silence" to="." method="_on_begin_silence_timeout"]
+[connection signal="timeout" from="end silence" to="." method="_on_end_silence_timeout"]
+[connection signal="finished" from="Starting hiss" to="." method="_on_starting_hiss_finished"]
+[connection signal="track_finished" from="Ad" to="." method="_on_ad_finished"]
+[connection signal="track_finished" from="Broadcast" to="." method="_on_broadcast_track_finished"]

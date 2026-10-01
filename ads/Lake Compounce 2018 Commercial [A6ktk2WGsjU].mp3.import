@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c75kaigwkbfd"
+path="res://.godot/imported/Lake Compounce 2018 Commercial [A6ktk2WGsjU].mp3-818cba913e175c1ab948f82a09e3f0d6.mp3str"
+
+[deps]
+
+source_file="res://ads/Lake Compounce 2018 Commercial [A6ktk2WGsjU].mp3"
+dest_files=["res://.godot/imported/Lake Compounce 2018 Commercial [A6ktk2WGsjU].mp3-818cba913e175c1ab948f82a09e3f0d6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

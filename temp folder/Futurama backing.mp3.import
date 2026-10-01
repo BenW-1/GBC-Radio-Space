@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crqvfd4mebc6p"
+path="res://.godot/imported/Futurama backing.mp3-3e930bb9d7de7bcf34ba939b5658e5e5.mp3str"
+
+[deps]
+
+source_file="res://temp folder/Futurama backing.mp3"
+dest_files=["res://.godot/imported/Futurama backing.mp3-3e930bb9d7de7bcf34ba939b5658e5e5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

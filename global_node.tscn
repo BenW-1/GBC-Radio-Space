@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://k2nl5160oi2n"]
+
+[ext_resource type="Script" uid="uid://bglemkrl10kyb" path="res://global_node.gd" id="1_x0wi2"]
+[ext_resource type="Script" uid="uid://b03ycq0nc1s5j" path="res://ConfigSeeder.gd" id="2_elugq"]
+
+[node name="global node" type="Node" unique_id=224268786]
+script = ExtResource("1_x0wi2")
+
+[node name="themes" type="Node" parent="." unique_id=1987425245]
+script = ExtResource("2_elugq")
+default_config_path = "res://default_configs/themes.txt"
+local_path = "configs/themes.txt"
+
+[node name="fields" type="Node" parent="." unique_id=37801610]
+script = ExtResource("2_elugq")
+default_config_path = "res://default_configs/fields.txt"
+local_path = "configs/fields.txt"
+
+[node name="IndexStore" type="Node" parent="." unique_id=453859050]
+script = ExtResource("2_elugq")
+default_config_path = "res://default_configs/index.txt"
+local_path = "configs/index.txt"
+
+[node name="stateSave" type="Timer" parent="." unique_id=1771765940]
+wait_time = 0.5
+autostart = true
+
+[node name="quick_start" type="Node" parent="." unique_id=973188074]
+script = ExtResource("2_elugq")
+default_config_path = "res://default_configs/quick_start.txt"
+local_path = "configs/quick_start.txt"
+
+[connection signal="timeout" from="stateSave" to="." method="_on_state_save_timeout"]

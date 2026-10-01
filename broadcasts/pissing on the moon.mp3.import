@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crxxoh3d1tci0"
+path="res://.godot/imported/pissing on the moon.mp3-185fea92fc6b996f97d3b6409c8f884a.mp3str"
+
+[deps]
+
+source_file="res://broadcasts/pissing on the moon.mp3"
+dest_files=["res://.godot/imported/pissing on the moon.mp3-185fea92fc6b996f97d3b6409c8f884a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

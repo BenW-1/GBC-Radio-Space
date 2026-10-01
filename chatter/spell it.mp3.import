@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmgndceauht3w"
+path="res://.godot/imported/spell it.mp3-8b0eff4f629fdcefcc53024c607f1d58.mp3str"
+
+[deps]
+
+source_file="res://chatter/spell it.mp3"
+dest_files=["res://.godot/imported/spell it.mp3-8b0eff4f629fdcefcc53024c607f1d58.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdyle3iias5p2"
+path="res://.godot/imported/Default_Wisp Remix.mp3-8626179ef4cf63598ac38ce547204fa0.mp3str"
+
+[deps]
+
+source_file="res://music/Default_Wisp Remix.mp3"
+dest_files=["res://.godot/imported/Default_Wisp Remix.mp3-8626179ef4cf63598ac38ce547204fa0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

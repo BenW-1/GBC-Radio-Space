@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0f8oxate8qoa"
+path="res://.godot/imported/O'Reilly Auto Parts radio commercial [7VL0CP4BrtA].mp3-7b8da2f88d2b250ff0d7e55a16662002.mp3str"
+
+[deps]
+
+source_file="res://ads/O'Reilly Auto Parts radio commercial [7VL0CP4BrtA].mp3"
+dest_files=["res://.godot/imported/O'Reilly Auto Parts radio commercial [7VL0CP4BrtA].mp3-7b8da2f88d2b250ff0d7e55a16662002.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

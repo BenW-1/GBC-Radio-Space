@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GBC Radio Space"
+run/main_scene="uid://w605rvdfddbw"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/show_image=false
+config/icon="res://Vinyl.ico"
+config/windows_native_icon="res://Vinyl.ico"
+
+[audio]
+
+buses/default_bus_layout="uid://v741mxslvtsy"
+
+[autoload]
+
+GlobalNode="*uid://k2nl5160oi2n"
+
+[display]
+
+window/size/borderless=true
+
+[gui]
+
+theme/custom_font="uid://kitqh1p4oryg"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

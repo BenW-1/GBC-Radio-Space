@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhlxpstvt5ek5"
+path="res://.godot/imported/Motel 6 Radio Commercial - Keys [Wkpkzv77x54].mp3-c68471ebd583724a59d973622b265933.mp3str"
+
+[deps]
+
+source_file="res://ads/Motel 6 Radio Commercial - Keys [Wkpkzv77x54].mp3"
+dest_files=["res://.godot/imported/Motel 6 Radio Commercial - Keys [Wkpkzv77x54].mp3-c68471ebd583724a59d973622b265933.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
